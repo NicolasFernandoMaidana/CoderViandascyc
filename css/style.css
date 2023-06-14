@@ -1,0 +1,182 @@
+html {
+  font-size: 90%;
+}
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TAMANIOS Y DIMENSIONES */
+.tamaniologo {
+  width: 200px;
+  height: 200px;
+  height: 200px;
+
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+
+ 
+
+  border: solid 3px greenyellow;
+
+ 
+}
+
+/* ----LO IBA A USAR Y NO LO USÉ---
+.tamaniotexto {
+padding: 0px;   
+}    */
+
+.tamaniofooter {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.tamanioequipocyc {
+  width: 50%;
+  margin-right: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.parrafosolo {
+  width: 50%;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+}
+
+/* GALERIA */
+.galeria {
+  font-size: 3rem;
+
+  /* --LO IBA A USAR Y NO LO USE
+  text-align: center ;
+    margin: 2rem; */
+}
+
+.imagenes {
+  display: flex;
+  height: 200px;
+  width: 200px;
+
+  /* ----LO IBA A USAR Y NO LO USE----
+  justify-content: center;
+   margin: 0px 50px 0px 350px;*/
+}
+
+.wspimg {
+  height: 40px;
+  width: 40px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 50;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* FONDOS  */
+.fondoverde {
+  background-color: rgb(121, 199, 121);
+}
+
+.fondoverdesuave {
+  background-color: lightgreen;
+}
+
+.fondoverdefuerte {
+  background-color: green;
+}
+
+/* LETRAS */
+
+.letraBlanca {
+  color: white;
+}
+
+.letranegrita {
+  font-weight: bold;
+}
+.letranormal {
+  font-weight: initial;
+}
+
+/* ENCABEZADOS */
+h1,
+h2,
+h3,
+h4 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+/* ESTRUCTURA CON GRIDS*/
+
+/* ------LO IBA A USAR Y NO LO USE------- 
+.gridContainer {
+  text-align:center;
+} */
+
+.columnas {
+  display: grid;
+  grid-template-columns: 200px 200px 200px; /* 3 columnas */
+  grid-template-rows: 400x 400px 400px; /* 3 filas */
+  border: solid 3px greenyellow;
+}
+
+/* 
+.footer {
+  /* /grid-area: footer;
+  display: flex;
+  background-color: rgb(121, 199, 121);
+  height: 200px;
+  width: 200px;
+  justify-content: left;
+  align-items: left;
+} */
+
+.footerimg {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* MEDIA QUERIES */
+/* vista para celular */
+
+@media only screen and (max-width: 767px) {
+  header nav ul {
+    display: none;
+  }
+
+  header nav ul.open {
+    display: block;
+  }
+
+  header nav ul.open li {
+    padding: 10px 0;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* vista para Desktop */
+@media only screen and (min-width: 768px) {
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
